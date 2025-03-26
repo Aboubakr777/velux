@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vélux</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body class="light-mode">
+
+    <nav style="width: 100%;" class="theme-toggle">
+        <div style="display:flex; justify-content: space-between;">
+            <img src="./img/logo.svg" alt="" srcset="">
+            <div class="gather">
+                <a class="translate" href="/fr.html">FR</a>
+                <button id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="first-section">
+        <div class="content-overlay">
+            <div class="hero-badge">جودة ممتازة</div>
+            <h1 class="hero-title">أضئ مساحة عملك بتألق مصابيح LED الحديثة</h1>
+
+            <div class="hero-features">
+                <div class="feature">
+                    <span class="feature-icon">✓&nbsp;</span>
+                    <span>تصميم أنيق وعصري</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✓&nbsp;</span>
+                    <span>سطوع قابل للتعديل</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✓ &nbsp;</span>
+                    <span>موفرة للطاقة</span>
+                </div>
+            </div>
+
+            <div class="dark-patterns">
+                <div class="pattern-item">
+                    <span class="pattern-icon">🔥&nbsp;</span>
+                    <span>خصم 36% - هذا الأسبوع فقط!</span>
+                </div>
+                <div class="pattern-item">
+                    <span class="pattern-icon">⚡&nbsp;</span>
+                    <span>المخزون <span id="stock-count"></span> محدود !</span>
+                </div>
+                <div class="pattern-item">
+                    <span class="pattern-icon">⭐&nbsp;</span>
+                    <span>95% من العملاء يوصون بهذا المصباح!</span>
+                </div>
+            </div>
+
+            <div class="delivery-badge">
+                <span class="delivery-icon">🚚&nbsp;</span>
+                <span>توصيل سريع ومجاني على الصعيد الوطني إلى جميع المدن المغربية</span>
+            </div>
+        </div>
+
+        <div class="whatsapp-button" id="whatsapp-button">
+            <i>💬</i>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ارتقِ بمساحة عملك</h1>
+            <p>مصباح مكتب LED ممتاز مع أدوات تحكم باللمس وشحن USB</p>
+            <div class="pricing-container">
+                <div class="pricing-option standard">
+                    <div class="price-label">قياسي: قطعة واحدة</div>
+                    <div class="price">139 درهم</div>
+                    <div class="feature-list">الميزات الأساسية</div>
+                </div>
+                <div class="pricing-option premium recommended">
+                    <div class="price-label">ممتاز: قطعتان <span class="best-value">عرض خاص</span></div>
+                    <div class="price">219 درهم</div>
+                    <div class="feature-list">وفر 36%</div>
+                </div>
+            </div>
+            <h2>عرض لفترة محدودة</h2>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="hours">21</span>
+                    <span class="label">ساعات</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="minutes">39</span>
+                    <span class="label">دقائق</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="seconds">45</span>
+                    <span class="label">ثواني</span>
+                </div>
+            </div>
+            <div class="cta-container">
+                <a  href="https://wa.me/+212600909024"  target="_blank" class="cta-button">اشتر الآن - عرض لفترة محدودة</a>
+                <div class="stock-warning">
+                    ⚡ فقط <span id="stock-count" class="stock-count">
+                        52
+                    </span> متبقية بهذا السعر!
+                </div>
+                <div class="live-visitors">
+                    <span class="visitor-dot"></span> <span class="visitor-count">19</span> شخص يشاهد هذا العرض الآن
+                </div>
+            </div>
+            <div class="security-badge">
+                <span class="secure-icon">🔒</span> دفع آمن | توصيل سريع*
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.pinimg.com/736x/f9/b2/e2/f9b2e2c76314e84cfa3262e5589b8df3.jpg" alt="مصباح مكتب LED فاخر">
+            <div class="discount-badge">وفر 36%</div>
+        </div>
+    </section>
+
+    <section class="product-slider">
+        <div class="slider-gallery">
+            <div class="main-image-container">
+                <img id="main-image" class="main-image" src="" alt="Main Product Image">
+            </div>
+            <div class="thumbnails-container" id="thumbnails">
+                <!-- Thumbnails will be dynamically inserted here -->
+            </div>
+        </div>
+    
+        <div class="zoom-overlay" id="zoom-overlay">
+            <img id="zoomed-image" class="zoomed-image" src="" alt="Zoomed Product Image">
+        </div>
+    </section>
+
+    <section class="product-gallery">
+        <div class="gallery-heading">
+            <h2>جرب الحرفية المتميزة</h2>
+            <p>التصميم الحديث يلتقي بوظائف استثنائية</p>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="./img/led.jpg" alt="مصباح مكتب - منظر أمامي">
+                <div class="image-caption">
+                    <span class="caption-title">إضاءة مثالية</span>
+                    <span class="caption-desc">5 مستويات سطوع</span>
+                </div>
+            </div>
+            <div class="gallery-item featured">
+                <div class="featured-badge">المفضل لدى العملاء</div>
+                <div class="video-container" id="video-container">
+                    <!-- الفيديو الذي يتم تشغيله بشكل متكرر قبل النقر -->
+                    <video id="preview-video" autoplay muted loop playsinline>
+                        <source src="./img/vid.mp4" type="video/mp4">
+                        المتصفح الخاص بك لا يدعم علامة الفيديو.
+                    </video>
+                    
+                    <!-- زر التشغيل -->
+                    <div class="play-button" id="play-button">
+                        <svg width="64" height="64" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" fill="rgba(0,0,0,0.5)"/>
+                            <path d="M10,8 L16,12 L10,16 Z" fill="#ffffff"/>
+                        </svg>
+                    </div>
+                    
+                    <!-- الفيديو المنبثق -->
+                    <div class="video-popup" id="video-popup">
+                        <div class="popup-content">
+                            <span class="close-popup" id="close-popup">&times;</span>
+                            <video id="popup-video" controls>
+                                <source src="./img/vid.mp4" type="video/mp4">
+                                المتصفح الخاص بك لا يدعم علامة الفيديو.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-caption">
+                    <span class="caption-title">تصميم أنيق</span>
+                    <span class="caption-desc">جمالية عصرية</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/17/83/4f/17834fdcccac08bae9f4428bc1604d4c.jpg" alt="مصباح مكتب - قيد الاستخدام">
+                <div class="image-caption">
+                    <span class="caption-title">شحن USB</span>
+                    <span class="caption-desc">محطة طاقة مدمجة</span>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-actions">
+            <a  href="https://wa.me/+212600909024"  target="_blank" class="gallery-cta">اشتري الآن</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>مصممة للتميز</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>إضاءة قابلة للتعديل</h3>
+                <p>تخصيص السطوع ودرجة حرارة اللون لأي مهمة</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-leaf"></i>
+                <h3>موفرة للطاقة</h3>
+                <p>وفر ما يصل إلى 75% من الكهرباء باستخدام تقنية LED</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>شحن USB</h3>
+                <p>منفذ USB مدمج لشحن الأجهزة بسهولة</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-hand-pointer"></i>
+                <h3>أدوات التحكم باللمس</h3>
+                <p>واجهة لمس سهلة الاستخدام لتشغيل سلس</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="social-proof">
+        <div class="testimonial-container">
+            <h2>خدمتنا تأتي مع</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>توصيل سريع إلى الدار البيضاء في 24 ساعة</p>
+                    <span class="customer-name">الدفع عند الاستلام</span>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>توصيل سريع لجميع المدن المغربية في أقل من 48 ساعة</p>
+                    <span class="customer-name">الدفع عند الاستلام</span>
+                </div>
+            </div>
+            <div class="satisfaction-rate">
+                ✨ 95% من العملاء يوصون بهذا المصباح!
+            </div>
+        </div>
+    </section>
+
+    <footer class="timer-section">
+        <div class="wrapper">
+            <img src="./img/logo.svg" alt="شعار">
+            <!-- <p>رقم الهاتف: +212 600-909024</p> -->
+            <p>Phone Number: +212 600-909024</p>
+            <p>Email: Velux@gmail.com</p>
+            <th></th>
+            <p>فيلوكس - © جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/+212600909024" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="./js/video.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
